@@ -1,6 +1,6 @@
 #!/bin/bash
 
-curl -H "Authorization: Bearer NmExYTNlYzQtYjc3Yy00MDdjLThiZmMtYzZjOTU3NDJjMzdjMjFhMmNiNTktOGQz" $1 > /home/zditech/retrieved-backup.tar.gz
+curl -s -H "Authorization: Bearer NmExYTNlYzQtYjc3Yy00MDdjLThiZmMtYzZjOTU3NDJjMzdjMjFhMmNiNTktOGQz" $1 > /home/zditech/retrieved-backup.tar.gz
 mkdir /home/zditech/retrieved-backup
 tar -zxf /home/zditech/retrieved-backup.tar.gz --directory /home/zditech/retrieved-backup
 cp /home/zditech/retrieved-backup/data/99-usb-serial.rules /data/99-usb-serial.rules 2>/dev/null
