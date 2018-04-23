@@ -2,7 +2,6 @@
 
 #set working directory to /home/zditech
 read -p "GO Name: " filename
-sleep 10
 cd /home/zditech
 
 #create tar file with name specified in command
