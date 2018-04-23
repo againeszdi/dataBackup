@@ -1,7 +1,6 @@
 #!/bin/bash
 
 #set working directory to /home/zditech
-read -p "GO Name: " filename
 cd /home/zditech
 
 #create tar file with name specified in command
