@@ -12,6 +12,6 @@ if [ -d "/home/zditech/retrieved-backup/data/slides" ]; then
 fi
 rm -r /home/zditech/retrieved-backup
 rm /home/zditech/retrieved-backup.tar.gz
-echo "\n"
+echo " "
 echo "Restore Complete"
-echo "\n"
+echo " "
