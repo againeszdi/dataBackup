@@ -5,7 +5,7 @@ read -p "GO Name: " filename
 cd /home/zditech
 
 #create tar file with name specified in command
-tar -zcf $filename.tar.gz /data
+tar -zcf "$filename".tar.gz /data
 echo "-----------------------------------------"
 echo " "
 #send file to spark room
