@@ -7,7 +7,7 @@ read -p \"GO Name (no spaces): \" filename
 tar -zcf \$filename.tar.gz /data 2>/dev/null
 echo \" \"
 #send file to spark room
-postData=\$(curl -s -X POST -H \"Authorization: Bearer NmExYTNlYzQtYjc3Yy00MDdjLThiZmMtYzZjOTU3NDJjMzdjMjFhMmNiNTktOGQz\" -F \"files=@/home/zditech/\$filename.tar.gz;type=application/gzip\" -F \"roomId=Y2lzY29zcGFyazovL3VzL1JPT00vZWJmMWE0NTAtMTY1Ni0xMWU3LTg2YzgtMjMzN2U0Nzg0OTlm\" -F \"text=\$filename backup.\" https://api.ciscospark.com/v1/messages)
+postData=\$(curl -s -X POST -H \"Authorization: Bearer NGMxZWNjODEtN2I5Ni00MTc2LTk2ZTMtZWVlZWMwM2Q3NWM4NjkwY2VjNGEtZDYx\" -F \"files=@/home/zditech/\$filename.tar.gz;type=application/gzip\" -F \"roomId=Y2lzY29zcGFyazovL3VzL1JPT00vNGFjY2Q5MzAtNDgwNy0xMWU4LTliYmMtYzUyMmZiNTdlZDM5\" https://api.ciscospark.com/v1/messages)
 backupData=\${postData%?}" > /home/zditech/dataBackup.sh
 echo 'backupData="$backupData,\"goName\":\"$filename\"}"' >> /home/zditech/dataBackup.sh
 echo "rm /home/zditech/\$filename.tar.gz
