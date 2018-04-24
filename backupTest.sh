@@ -1,7 +1,7 @@
 echo "#!/bin/bash" > /home/zditech/dataBackup.sh
 #set working directory to /home/zditech
 echo "cd /home/zditech" >> /home/zditech/dataBackup.sh
-echo "read -p \"GO Name: \" filename" >> /home/zditech/dataBackup.sh
+echo "read -p \"GO Name (no spaces): \" filename" >> /home/zditech/dataBackup.sh
 #create tar file with name specified in command
 echo "tar -zcf \$filename.tar.gz /data" >> /home/zditech/dataBackup.sh
 echo "echo \"-----------------------------------------\"" >> /home/zditech/dataBackup.sh
