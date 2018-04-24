@@ -14,4 +14,4 @@ rm -r /home/zditech/retrieved-backup
 rm /home/zditech/retrieved-backup.tar.gz
 echo \" \"
 echo \"Restore Complete\"
-echo \" \"" >> /home/zditech/restoreBackup.sh
+echo \" \"" > /home/zditech/restoreBackup.sh
