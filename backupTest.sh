@@ -14,4 +14,4 @@ echo "rm /home/zditech/\$filename.tar.gz
 #send file URL to spark room
 curl -s -X POST http://recvmsg.cwtest.ultrahook.com -d \"\$backupData\"
 echo \"Backup of \$filename complete\"
-echo \"-----------------------------------------\"" > /home/zditech/dataBackup.sh
+echo \"-----------------------------------------\"" >> /home/zditech/dataBackup.sh
