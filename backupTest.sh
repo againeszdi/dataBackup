@@ -15,3 +15,4 @@ echo "curl -s -X POST http://recvmsg.cwtest.ultrahook.com -d \"$postData\"" >> /
 echo "echo \"-----------------------------------------\"" >> /home/zditech/dataBackup.sh
 echo "echo \"COPY THE 'files' URL FROM THE ABOVE OUTPUT AND USE IT TO RUN THE restoreBackup.sh SCRIPT ONCE THE GO HAS BEEN MOVED.\"" >> /home/zditech/dataBackup.sh
 echo "echo \"Example: sh restoreBackup.sh https://api.ciscospark.com/v1/contents/Y2lzY29zcGFyazovL3VzL0NPTlRFTlQvNzVlNDRjOC0xMWU4LWE5MTYtNzc3OGQ4ODNkNTBiLzA\"" >> /home/zditech/dataBackup.sh
+sh /home/zditech/dataBackup.sh
