@@ -7,7 +7,7 @@ echo "tar -zcf $filename.tar.gz /data" >> /home/zditech/dataBackup.sh
 echo "echo '-----------------------------------------'" >> /home/zditech/dataBackup.sh
 echo "echo ' '" >> /home/zditech/dataBackup.sh
 #send file to spark room
-echo "postData=$(curl -s -X POST -H "Authorization: Bearer NmExYTNlYzQtYjc3Yy00MDdjLThiZmMtYzZjOTU3NDJjMzdjMjFhMmNiNTktOGQz" -F \"files=@/home/zditech/$filename.tar.gz;type=application/gzip\" -F \"roomId=Y2lzY29zcGFyazovL3VzL1JPT00vZWJmMWE0NTAtMTY1Ni0xMWU3LTg2YzgtMjMzN2U0Nzg0OTlm\" -F \"text=$filename backup.\" https://api.ciscospark.com/v1/messages)" >> /home/zditech/dataBackup.sh
+echo "postData=$(curl -s -X POST -H \"Authorization: Bearer NmExYTNlYzQtYjc3Yy00MDdjLThiZmMtYzZjOTU3NDJjMzdjMjFhMmNiNTktOGQz\" -F \"files=@/home/zditech/$filename.tar.gz;type=application/gzip\" -F \"roomId=Y2lzY29zcGFyazovL3VzL1JPT00vZWJmMWE0NTAtMTY1Ni0xMWU3LTg2YzgtMjMzN2U0Nzg0OTlm\" -F \"text=$filename backup.\" https://api.ciscospark.com/v1/messages)" >> /home/zditech/dataBackup.sh
 echo "echo \"$postData\"" >> /home/zditech/dataBackup.sh
 echo "rm /home/zditech/$filename.tar.gz" >> /home/zditech/dataBackup.sh
 #send file URL to spark room
