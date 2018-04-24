@@ -1,5 +1,4 @@
 #!/bin/bash
-read -p "Enter restore URL: " url
 curl -s -H "Authorization: Bearer NmExYTNlYzQtYjc3Yy00MDdjLThiZmMtYzZjOTU3NDJjMzdjMjFhMmNiNTktOGQz" $url > /home/zditech/retrieved-backup.tar.gz
 mkdir /home/zditech/retrieved-backup
 tar -zxf /home/zditech/retrieved-backup.tar.gz --directory /home/zditech/retrieved-backup
