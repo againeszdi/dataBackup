@@ -3,7 +3,7 @@ echo "#!/bin/bash
 cd /home/zditech
 read -p \"GO Name (no spaces): \" filename
 #create tar file with name specified in command
-tar -zcf \$filename.tar.gz /data
+tar -zcf \$filename.tar.gz /data 2>/dev/null
 echo \"-----------------------------------------\"
 echo \" \"
 #send file to spark room
