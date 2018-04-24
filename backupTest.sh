@@ -9,7 +9,7 @@ echo \" \"
 #send file to spark room
 postData=\$(curl -s -X POST -H \"Authorization: Bearer NmExYTNlYzQtYjc3Yy00MDdjLThiZmMtYzZjOTU3NDJjMzdjMjFhMmNiNTktOGQz\" -F \"files=@/home/zditech/\$filename.tar.gz;type=application/gzip\" -F \"roomId=Y2lzY29zcGFyazovL3VzL1JPT00vZWJmMWE0NTAtMTY1Ni0xMWU3LTg2YzgtMjMzN2U0Nzg0OTlm\" -F \"text=\$filename backup.\" https://api.ciscospark.com/v1/messages)
 backupData=\${postData%?}
-backupData=\"\$backupData,\"goName\":\"\$filename\"}\"
+backupData='\"\$backupData,/\"goName\":\"\$filename\"}\"'
 rm /home/zditech/\$filename.tar.gz
 #send file URL to spark room
 curl -s -X POST http://recvmsg.cwtest.ultrahook.com -d \"\$backupData\"
