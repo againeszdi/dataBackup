@@ -10,7 +10,7 @@ if [ -d \"/home/zditech/retrieved-backup/data/slides\" ]; then
   mkdir /data/slides 2>/dev/null
   cp /home/zditech/retrieved-backup/data/slides/*.png /data/slides/ 2>/dev/null
 fi
-if [ -d \"/home/zditech/retrieved-backup/data/script\" ]; then
+if [ -f \"/home/zditech/retrieved-backup/data/script\" ]; then
   cp /home/zditech/retrieved-backup/data/script /data/script 2>/dev/null
 fi
 rm -r /home/zditech/retrieved-backup
